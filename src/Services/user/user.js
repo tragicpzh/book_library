@@ -1,4 +1,4 @@
-import user from '../../models/user';
+
 import request from 'umi-request';
 
 export function updateUser(params){

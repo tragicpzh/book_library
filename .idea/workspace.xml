@@ -19,7 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="项目上传" />
+    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="初始化项目">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/book/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/book/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/room/room.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/room/room.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/users.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/books.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/rooms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/rooms.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookTypeAnalyze/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookTypeAnalyze/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typings.d.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,11 +49,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="1c29002a-911b-4299-a7f8-6e3ee594bcbb" />
@@ -47,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\workspace\book_library\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="tasks.servers" />
@@ -55,9 +77,30 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\book_library\node_modules" />
       <recent name="D:\workspace\book_library\src" />
+      <recent name="D:\workspace\book_library\dist" />
+      <recent name="D:\workspace\book_library\node_modules" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\book_library" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,8 +116,26 @@
       <workItem from="1599729392820" duration="4158000" />
       <workItem from="1599788838368" duration="3490000" />
       <workItem from="1599812025228" duration="2381000" />
-      <workItem from="1599820559097" duration="882000" />
+      <workItem from="1599820559097" duration="1120000" />
+      <workItem from="1600047627061" duration="40000" />
+      <workItem from="1602234444085" duration="941000" />
+      <workItem from="1602292345810" duration="4924000" />
+      <workItem from="1602298384393" duration="11213000" />
+      <workItem from="1602323414994" duration="603000" />
+      <workItem from="1602559820532" duration="1250000" />
+      <workItem from="1602638813482" duration="9241000" />
+      <workItem from="1602656208275" duration="1591000" />
+      <workItem from="1602658040589" duration="4518000" />
+      <workItem from="1602726029512" duration="19060000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化项目">
+      <created>1599821613138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599821613138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,19 +153,45 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599619278869">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602661215890">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602661215890" />
+    <state x="2544" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602317228048">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1599619278869" />
-    <state x="2660" y="261" key="FileChooserDialogImpl" timestamp="1599821391262">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2544" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317228048" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602659107684">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602659107684" />
     <state x="2660" y="261" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821391262" />
-    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog" timestamp="1599821079760">
+    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog" timestamp="1599821634871">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821079760" />
+    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821634871" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1602317697088">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317697088" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1602317697088">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317697088" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1602317697087">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317697087" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1602317697088">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317697088" />
     <state x="2381" y="164" key="SettingsEditor" timestamp="1599820730266">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -121,10 +208,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2683" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820052382" />
+    <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1602743593901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="596" height="536" key="find.popup/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602743593901" />
+    <state x="2582" y="252" width="596" height="536" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602309991141" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1599731573869">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599731573869" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602312052983">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602312052983" />
     <state x="2710" y="311" key="svn.repositoryBrowser" timestamp="1599820404115">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

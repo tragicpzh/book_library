@@ -2,7 +2,7 @@ import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import { useSelector,useDispatch } from 'dva';
 import { Button } from 'antd';
-const BookTypeAnalyze=()=>{
+const BookTypeAnalyze=(props)=>{
   const dispatch=useDispatch();
   const {types,list}=useSelector((temp:any)=>temp['bookTypeAnalyze']);
   const updateData=()=>{

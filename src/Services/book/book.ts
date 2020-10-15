@@ -1,32 +1,34 @@
-function BookAPi(){
-  let books:any=null;
-  return function(type:string,bookInfo:any){
-    switch (type){
-      case "get":{
-        return books;
-      }
-      case "init":{
-        books=[];
-        bookInfo.forEach((book:any)=> {
-          books.push(book)
-        });
-        return true;
-      }
-      case "renew":{
-        const {id}=bookInfo;
+import request from "@/utils/request";
 
-        let time=new Date(books[id].backTime);
-        time.setDate(time.getDate()+7);
-        books[id].backTime=new Date(time);
-
-        if(books[id].backTime>books[id].borrowTime)books[id].state="仍可使用";
-        else books[id].state="待归还";
-        return books[id].state;
-      }
-      default:{
-        return ;
-      }
-    }
-  }
+export function booksRenew(params){
+  return (
+    request
+      .post('http://172.16.9.129:3000/books/booksRenew',{
+        data:{
+          ...params
+        }
+      })
+      .then(function (response){
+        return response
+      })
+      .catch(function(err){
+        return err
+      })
+  )
 }
-export default BookAPi;
+export function getBooksList(params){
+  return (
+    request
+      .post('http://172.16.9.129:3000/books/getBooksTable',{
+        data:{
+          ...params
+        }
+      })
+      .then(function (response){
+        return response
+      })
+      .catch(function(err){
+        return err
+      })
+  )
+}

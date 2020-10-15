@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Form, Input, Icon, Button, Card, Modal, message ,Select} from 'antd';
+import { Form, Input, Icon, Button, Card,  message ,Select} from 'antd';
 import {FormComponentProps} from "antd/lib/form";
 import style from './index.less'
 import {history} from 'umi';
 import {useDispatch} from 'dva';
-import ShadowView from "@/components/ShadowView";
 
 const Login=(props:FormComponentProps)=>{
   const dispatch=useDispatch();

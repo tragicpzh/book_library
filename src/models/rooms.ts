@@ -1,43 +1,80 @@
-import RoomApi from '../Services/room/room';
+import {Reducer,Effect,Subscription} from "umi";
+import {cloneDeep} from 'lodash';
+import * as api from '@/Services/room/room'
 
-const api:any=RoomApi();
-export default {
-  namespace:"rooms",
-  state:{
-    rooms:[]
+const namespace='rooms'
+const initState:roomsStateType={
+  rooms:[]
+}
+interface roomsStateType{
+  rooms:any[]
+}
+interface roomsModelType{
+  namespace:string,
+  state:roomsStateType,
+  reducers:{
+    updateState:Reducer<roomsStateType>
+  }
+  effects:{
+    getRooms:Effect,
+    updateRoom:Effect
+  }
+  subscriptions:{
+    setup:Subscription
+  }
+}
+const roomsModel:roomsModelType={
+  namespace:namespace,
+  state:cloneDeep(initState),
+  subscriptions:{
+      setup({dispatch,history}){
+        history.listen(location => {
+          if(location.pathname==='/users/roomApply'){
+            dispatch({
+              type:'getRooms'
+            })
+          }
+        })
+      }
   },
   reducers:{
-    get(state:any){
-      return{ rooms:api("get")};
-    },
-    apply(state:any,Info:{roomInfo:any}){
-      api("apply",Info.roomInfo);
-      let rooms=state.rooms;
-      rooms[Info.roomInfo].state="已预约";
-      return {rooms:rooms};
-    },
-    cancel(state:any,Info:{roomInfo:any}){
-      api("cancel",Info.roomInfo);
-      let rooms=state.rooms;
-      rooms[Info.roomInfo].state="有空位";
-      return {rooms:rooms};
-    },
-    init(state:any){
-      let rooms:any=[];
-      let size=Math.floor(Math.random()*20+5);
-      for(let i=0;i<size;i++){
-        let room={
-          id:i,
-          key:i,
-          name:`Room ${i}`,
-          position:`No. ${i+1} Road`,
-          contact_people:'abc',
-          state:(i%2===0)?"有空位":"满人"
-        }
-        rooms.push(room);
+    updateState(state,action){
+      return {
+        ...state,
+        ...action.payload
       }
-      api("init",rooms);
-      return {rooms:rooms};
+    }
+  },
+  effects:{
+    *getRooms({payload},{call,select,put}){
+      const {userId}=yield select(({user}:any)=>({userId:user.id}));
+      const params={
+        userId,
+        ...payload
+      }
+      const data=yield call(api.getRooms,params);
+      if(data.httpCode===200){
+        yield put({
+          type:'updateState',
+          payload:{
+            rooms:data.data.list
+          }
+        })
+      }
+    },
+    *updateRoom({payload},{call,select,put}){
+      const {userId}=yield select(({user}:any)=>({userId:user.id}));
+      const params={
+        userId,
+        ...payload
+      }
+      const data=yield call(api.updateRoom,params);
+      if(data.httpCode===200){
+          yield put({
+            type:'getRooms'
+          })
+      }
     }
   }
 }
+export default roomsModel;

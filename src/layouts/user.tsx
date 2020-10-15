@@ -34,12 +34,16 @@ const UserIndex = (props: any) => {
           <NavLink to="/login" onClick={exitUser}><Icon type="logout" style={{ color: 'white', float: 'right', fontSize: '60px' }}
                                      className={style.HeaderIcon}/></NavLink>
         </Header>
-        <Content>
-          {props.children}
+        <Content className={style.out}>
+          <div className={style.flex}>
+            <div className={style.content}>
+              {props.children}
+            </div>
+            <div className={style.footer}>
+              @made by pzh 0.0.1
+            </div>
+          </div>
         </Content>
-        <Footer className={style.footer}>
-          @made by pzh 0.0.1
-        </Footer>
       </Layout>
     </Layout>
   );

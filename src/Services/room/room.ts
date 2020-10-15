@@ -1,27 +1,29 @@
-
-function RoomApi(){
-  let rooms:any=null;
-  return function(type:string,roomInfo:any){
-      switch (type){
-        case "get":{
-          return rooms;
-        }
-        case "apply":{
-          let id=roomInfo;
-          rooms[id].state="已预约";
-          return true;
-        }
-        case "cancel":{
-          let id=roomInfo;
-          rooms[id].state="有空位";
-          return true;
-        }
-        case "init":{
-          rooms=[];
-          roomInfo.forEach((room:any)=>{rooms.push(room)});
-          return true;
-        }
-      }
-  }
+import request from '@/utils/request';
+export function getRooms(params) {
+  return request
+    .post('http://172.16.9.129:3000/room/getRooms', {
+      data: {
+        ...params,
+      },
+    })
+    .then(response => {
+      return response;
+    })
+    .catch(err => {
+      return err;
+    });
 }
-export default RoomApi;
+export function updateRoom(params) {
+  return request
+    .post('http://172.16.9.129:3000/room/updateRoom', {
+      data: {
+        ...params,
+      },
+    })
+    .then(response => {
+      return response;
+    })
+    .catch(err => {
+      return err;
+    });
+}

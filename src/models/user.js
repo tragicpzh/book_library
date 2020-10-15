@@ -20,7 +20,6 @@ export default {
   effects:{
     *query({},{put,call,select}) {
       const {id}=yield select(tmp=>tmp['user']);
-      console.log(id);
       const params={id};
       const data = yield call(getUser,params);
       if (!data.success) message.error("获取个人信息失败");
@@ -66,7 +65,6 @@ export default {
     *login({payload,callback},{call,put}){
       const params={...payload};
       const data=yield call(confirm,params);
-      console.log(data);
       if(data.success){
         yield put({
           type:'updateState',
