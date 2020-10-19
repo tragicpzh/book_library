@@ -1,42 +1,108 @@
-import React, { useState } from 'react';
-import { useDispatch,useSelector} from 'dva';
-import { Button, Icon,Table } from 'antd';
-const Index=()=>{
-  const dispatch=useDispatch();
-  const {
-    todos
-  }=useSelector((state:any)=> state['todo']);
-  todos.forEach((todo:any)=>{
-    todo.endTimeString=todo.endTime.toLocaleString();
-  });
-  const del=(e:any,id:any)=>{
-    e.preventDefault();
-    dispatch({
-      type:'todo/del',
-      todoInfo:{
-        id:id
-      },
-    })
-  };
-  const columns=[
-    {
-      title: "待办内容",
-      dataIndex: "content",
-      key:"content"
+import React, {useCallback, useEffect, useState} from 'react';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { Button, Icon } from 'antd';
+import { history } from 'umi';
+import styles from './index.less';
+import {useSelector} from "dva";
+const Todo = () => {
+  const {todos}=useSelector(({todo}:any)=>({todos:todo.todos}))
+  const [items, setItems] = useState([]);
+
+  useEffect(()=>{
+    setItems(todos)
+  },[todos])
+
+  const sort = useCallback(
+    (start, end) => {
+      const [item] = items.splice(start, 1);
+      items.splice(end, 0, item);
+      return items;
     },
-    {
-      title: "截止时间",
-      dataIndex: "endTimeString",
-      key:"endTime",
+    [items],
+  );
+
+  const onDragEnd = useCallback(
+    result => {
+      if (!result.destination) {
+        return;
+      }
+      const newItems = sort(result.source.index, result.destination.index);
+      setItems(newItems);
     },
-    {
-      title: "操作",
-      key:"action",
-      render:(text:any,record:any,index:any)=>(
-        <Button onClick={(e)=>del(e,record.id)}><Icon type="close" /></Button>
-      )
-    }
-  ]
-  return <Table columns={columns} dataSource={todos}></Table>
-}
-export default Index;
+    [setItems,sort],
+  );
+
+  const toPage = useCallback(to => {
+    history.push(to);
+  }, []);
+
+  const getItemStyle = useCallback(
+    (isDragging, draggableStyle) => ({
+      ...draggableStyle,
+      background: isDragging ? 'blue' : 'grey',
+      padding: 16,
+      marginBottom: 8,
+      display: 'flex',
+    }),
+    [],
+  );
+
+  const getListStyle = useCallback(
+    isDraggingOver => ({
+      background: isDraggingOver ? 'lightblue' : 'lightgrey',
+      padding: 8,
+    }),
+    [],
+  );
+
+  return (
+    <DragDropContext onDragEnd={onDragEnd}>
+      <Droppable droppableId="TodoList">
+        {(provided, snapshot) => {
+          return (
+            <div
+              {...provided.droppableProps}
+              ref={provided.innerRef}
+              style={getListStyle(snapshot.isDraggingOver)}
+            >
+              {items.map((item, index) => {
+                return (
+                  <Draggable key={item.id} draggableId={item.id} index={index}>
+                    {(provided, snapshot) => (
+                      <div
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        style={getItemStyle(
+                          snapshot.isDragging,
+                          provided.draggableProps.style,
+                        )}
+                      >
+                        <div className={styles.prefix}>
+                          <Icon
+                            type="info-circle"
+                            theme="filled"
+                            style={{ color: item.color }}
+                          />
+                          <span>{item.name}</span>
+                        </div>
+                        <div className={styles.content}>{item.todo}</div>
+                        <div className={styles.suffix}>
+                          <Button onClick={() => toPage(item.to)}>
+                            detail
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+                  </Draggable>
+                );
+              })}
+              {provided.placeholder}
+            </div>
+          );
+        }}
+      </Droppable>
+    </DragDropContext>
+  );
+};
+export default Todo;

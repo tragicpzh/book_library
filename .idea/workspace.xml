@@ -19,26 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="初始化项目">
+    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="书籍列表 自习室列表 添加自定义plugin loader 修改路由规则">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/book/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/book/book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/room/room.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/room/room.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/recommend/recommend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/recommend/recommend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/todo/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/todo/todo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/users.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/books.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/recommends.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/recommends.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/rooms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/rooms.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/todo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/bookTypeAnalyze/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookTypeAnalyze/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typings.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/todo/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +44,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -70,6 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\workspace\book_library\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="tasks.servers" />
@@ -126,7 +122,9 @@
       <workItem from="1602638813482" duration="9241000" />
       <workItem from="1602656208275" duration="1591000" />
       <workItem from="1602658040589" duration="4518000" />
-      <workItem from="1602726029512" duration="19060000" />
+      <workItem from="1602726029512" duration="19427000" />
+      <workItem from="1602812825456" duration="20065000" />
+      <workItem from="1603070849419" duration="12980000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1599821613138</created>
@@ -135,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599821613138</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="书籍列表 自习室列表 添加自定义plugin loader 修改路由规则">
+      <created>1602755796422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602755796422</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="书籍列表 自习室列表 添加自定义plugin loader 修改路由规则" />
+    <option name="LAST_COMMIT_MESSAGE" value="书籍列表 自习室列表 添加自定义plugin loader 修改路由规则" />
   </component>
   <component name="WindowStateProjectService">
     <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602661215890">
@@ -200,9 +206,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2710" y="389" key="VCS.EditChangelistDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820170244" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599821199782">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602755802986">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602755802986" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821199782" />
     <state x="2683" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599820052382">
       <screen x="1920" y="0" width="1920" height="1040" />

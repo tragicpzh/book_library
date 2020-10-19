@@ -1,18 +1,25 @@
-function RecommendApi(){
-  let recommends:any=[];
-  return function(type:string,recInfo:any){
-    switch (type){
-      case "get":{
-        return recommends;
-      }
-      case "init":{
-        recommends=[];
-        recInfo.forEach((rec:any)=>{
-            recommends.push(rec);
-        })
-        return recommends;
-      }
-    }
-  }
+import request from "@/utils/request";
+
+export function getImgs(){
+  return(
+    request.post('http://172.16.9.129:3000/recommend/getImgs')
+      .then((response)=>{
+        return response
+      })
+      .catch((err)=>{
+        return err;
+      })
+  )
 }
-export default RecommendApi;
+
+export function addImg(){
+  return(
+    request.post('http://172.16.9.129:3000/recommend/addImg')
+      .then((response)=>{
+        return response
+      })
+      .catch((err)=>{
+        return err;
+      })
+  )
+}

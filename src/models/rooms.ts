@@ -4,10 +4,16 @@ import * as api from '@/Services/room/room'
 
 const namespace='rooms'
 const initState:roomsStateType={
-  rooms:[]
+  rooms:[],
+  pageNo:1,
+  pageSize:10,
+  total:0,
 }
 interface roomsStateType{
   rooms:any[]
+  pageNo:number
+  pageSize:number
+  total:number
 }
 interface roomsModelType{
   namespace:string,
@@ -47,9 +53,11 @@ const roomsModel:roomsModelType={
   },
   effects:{
     *getRooms({payload},{call,select,put}){
-      const {userId}=yield select(({user}:any)=>({userId:user.id}));
+      const {userId,pageNo,pageSize}=yield select(({user,rooms}:any)=>({userId:user.id,pageNo:rooms.pageNo,pageSize:rooms.pageSize}));
       const params={
         userId,
+        pageNo,
+        pageSize,
         ...payload
       }
       const data=yield call(api.getRooms,params);
@@ -57,7 +65,8 @@ const roomsModel:roomsModelType={
         yield put({
           type:'updateState',
           payload:{
-            rooms:data.data.list
+            rooms:data.data.list,
+            total:data.data.total
           }
         })
       }
