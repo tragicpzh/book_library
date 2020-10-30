@@ -1,0 +1,41 @@
+.rate-test{
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  outline: none;
+}
+.rate-test-star:not(:last-child){
+  margin-right: 10px;
+}
+.rate-test-star{
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  color:grey ;
+}
+.rate-test-star-first{
+  top: 0;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  outline: none;
+  opacity: 0;
+  transition: color .3s ease;
+}
+.rate-test-star-second{
+  text-align: center;
+  outline: none;
+}
+.rate-test-star-full .rate-test-star-second{
+  color: rebeccapurple;
+}
+.rate-test-star-half .rate-test-star-first{
+  color:rebeccapurple;
+  opacity: 1;
+}
+.rate-test-star div{
+  outline: none;
+}
+

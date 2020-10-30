@@ -1,0 +1,36 @@
+.demo-cascader-input{
+  padding-right: 24px;
+  background-color: transparent;
+}
+.demo-cascader-wrapper{
+  width: 200px;
+  position: relative;
+  background-color: white;
+  outline: none;
+}
+.demo-cascader-icon{
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  height: 12px;
+  z-index: 1;
+  margin-top: -6px;
+  color: rgba(0,0,0,.25);
+  opacity: 0.5;
+}
+.demo-cascader-clear-on{
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  height: 12px;
+  margin-top: -6px;
+  opacity: 0;
+  z-index: 3;
+  transition: opacity .15s ease;
+}
+.demo-cascader-clear-on:hover{
+  opacity: 1;
+}
+.demo-cascader-clear-off{
+  display: none;
+}
