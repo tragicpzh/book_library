@@ -1,0 +1,68 @@
+.datepicker-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8dada;
+  height: 30px;
+  font-size: 15px;
+  align-items: center;
+  padding: 2px;
+}
+.datepicker-header-jump{
+  display: inline-block;
+}
+.datepicker-header-button{
+  width: 25px;
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.datepicker-header-button:hover{
+  color: grey;
+}
+.datepicker-body-table{
+  width: 100%;
+  text-align: center;
+}
+.datepicker-body{
+  padding: 2px;
+}
+.datepicker-body-table div{
+  color: rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.datepicker-body-inMonth div{
+  color:rgba(0,0,0,0.65);
+  transition: background-color .3s ease;
+}
+.datepicker-body-inMonth div:hover{
+  background-color: #999999;
+}
+.datepicker-body-active div{
+  color:rgba(0,0,0,0.65);
+  background-color: #bae7ff;
+}
+.datepicker-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  font-size: 10px;
+  padding: 2px;
+  text-align: center;
+}
+.datepicker-footer-reset{
+  background-color: #bae7ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+}
+.datepicker-footer-confirm{
+  background-color: #bae7ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+}

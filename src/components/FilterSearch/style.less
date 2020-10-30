@@ -1,0 +1,36 @@
+.filterWrapper {
+  width: 200px;
+}
+
+.notSearchResult {
+  color: #999;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.filterCheckbox {
+  width: 100%;
+  max-height: 110px;
+  overflow-y: auto;
+
+  :global {
+    .ant-checkbox {
+      margin-top: 2px;
+    }
+
+    .ant-checkbox-wrapper {
+      width: 100%;
+      padding: 4px 8px;
+      margin: 0;
+      display: flex;
+    }
+  }
+}
+
+.clear {
+  float: left;
+}
+
+.confirm {
+  float: right;
+}

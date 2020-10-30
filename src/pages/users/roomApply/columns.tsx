@@ -1,6 +1,31 @@
 import { Button } from 'antd';
 import React from 'react';
-
+import FilterSearch from '@/components/FilterSearch/index'
+import {FilterDropdownProps} from 'antd/es/table';
+const filter=[
+  {
+    text:'1',
+    value:'1',
+  },
+  {
+    text:'11',
+    value:'11',
+  },
+  {
+    text:'111',
+    value:'111',
+    children:[
+      {
+        text:'1111',
+        value:'1111'
+      },
+      {
+        text:'11111',
+        value:'11111'
+      }
+    ]
+  }
+]
 const columns = [
   {
     title: '名字',
@@ -21,20 +46,19 @@ const columns = [
     title: '目前状态',
     dataIndex: 'state',
     key: 'state',
-    filters: [
-      {
-        text: '已预约',
-        value: '已预约',
-      },
-      {
-        text: '有空位',
-        value: '有空位',
-      },
-      {
-        text: '满人',
-        value: '满人',
-      },
-    ],
+    filterDropdown:({ selectedKeys, setSelectedKeys, confirm,visible }: FilterDropdownProps) => {
+      return (
+        <FilterSearch
+          selectKeys={selectedKeys}
+          setSelectedKeys={setSelectedKeys}
+          confirm={confirm}
+          filter={filter}
+          visible={visible}
+          multiple={true}
+        />
+      );
+    },
+    defaultFilteredValue:["11","1"]
   },
   {
     title: '操作',

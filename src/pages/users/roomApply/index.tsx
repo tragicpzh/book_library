@@ -32,7 +32,8 @@ const Index = () => {
     });
   };
 
-  const onChange = pagination => {
+  const onChange = (pagination,filter,_) => {
+    console.log(filter);
     dispatch({
       type: 'rooms/updateState',
       payload: {

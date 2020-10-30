@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect,useDispatch} from 'dva';
-import { Button, Form, Input, message } from 'antd';
+import {Button, Form, Input, message, Cascader as AntCascader, Upload} from 'antd';
 import { FormComponentProps } from 'antd/es/form';
 import { useSelector } from '@@/plugin-dva/exports';
+import Trigger from './components/Trigger/Trigger'
+import Cascader from '@/components/Cascader/index'
+import Slider from './components/Slider/index'
+import Rate from './components/Rate/index'
+import BigUpload from './components/BigUpload'
 
 const IndexForm=(props:FormComponentProps)=>{
   const dispatch=useDispatch();
@@ -13,7 +18,6 @@ const IndexForm=(props:FormComponentProps)=>{
     telephone
   }=useSelector((state:any)=>state['user']);
   const {getFieldDecorator}=props.form;
-
   const handleUser=(e:any)=>{
     e.preventDefault();
     props.form.validateFieldsAndScroll((err,values)=>{
@@ -35,8 +39,28 @@ const IndexForm=(props:FormComponentProps)=>{
       }
     })
   }
+
+  const uploadProps={
+    onChange:(info)=>{
+      const file=info.file;
+      file.percent&&console.log(file.percent)
+    }
+  }
   return(
     <div>
+      <BigUpload></BigUpload>
+      <Rate></Rate>
+      <Slider></Slider>
+      <div>
+        <AntCascader popupVisible={false}></AntCascader>
+      </div>
+      <div>
+        <Trigger></Trigger>
+      </div>
+      <Upload {...uploadProps}>
+        <Button>上传</Button>
+      </Upload>
+      <Cascader></Cascader>
       <Form onSubmit={handleUser}>
         <Form.Item label="username">
           {
