@@ -2,14 +2,17 @@ import { defineConfig } from 'umi';
 // import path from 'path';
 export default defineConfig({
   nodeModulesTransform: {
-    type: 'none',
+    type: 'all',
   },
   dva:{
-    immer:true
+    immer:false
   },
   antd:{
 
   },
+  targets: {
+    ie: 9,
+  }
   /*chainWebpack(config){
     config.module
       .rule('js-test')

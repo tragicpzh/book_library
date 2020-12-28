@@ -15,6 +15,7 @@ request.use(async (ctx,next)=>{
   const data={
     ...req,Time
   }
+  req.options.body=req.options.body?JSON.parse(req.options.body):undefined;
   navigator.sendBeacon("http://172.16.9.129:3000/log",JSON.stringify(data));
 })
 export default request;

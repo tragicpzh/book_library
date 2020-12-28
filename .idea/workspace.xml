@@ -19,21 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="Todo拖拽页 自习室、书籍管理分页功能 推荐书目页(瀑布流)">
-      <change afterPath="$PROJECT_DIR$/src/components/FilterSearch/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilterSearch/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilterSearch/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/BigUpload/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/DatePicker/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/DatePicker/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/Trigger/Trigger.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/Trigger/index.less" afterDir="false" />
+    <list default="true" id="e54266fb-159f-4da4-92d9-6edd1f574259" name="Default Changelist" comment="大文件上传">
+      <change afterPath="$PROJECT_DIR$/src/pages/users/chat/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/chat/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/echarts/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/game/constant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/game/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/game/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/users/userInfo/components/Progress/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/users.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/users.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/roomApply/columns.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/roomApply/columns.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookManage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/bookRecommend/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/roomApply/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/todo/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/users/userInfo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/userInfo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +51,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="Less File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -66,7 +74,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/FilterSearch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\workspace\book_library\node_modules\prettier" />
@@ -139,7 +147,33 @@
       <workItem from="1603761142319" duration="9449000" />
       <workItem from="1603850866993" duration="4732000" />
       <workItem from="1603956981687" duration="2760000" />
-      <workItem from="1604021032457" duration="13208000" />
+      <workItem from="1604021032457" duration="13373000" />
+      <workItem from="1604280204507" duration="4898000" />
+      <workItem from="1604366064785" duration="27956000" />
+      <workItem from="1604452530309" duration="30334000" />
+      <workItem from="1604539180382" duration="17333000" />
+      <workItem from="1605087780754" duration="952000" />
+      <workItem from="1605143898207" duration="621000" />
+      <workItem from="1605246479312" duration="5966000" />
+      <workItem from="1605764381800" duration="2470000" />
+      <workItem from="1605767930444" duration="5773000" />
+      <workItem from="1605835426956" duration="17137000" />
+      <workItem from="1605866838142" duration="1129000" />
+      <workItem from="1606098681605" duration="2969000" />
+      <workItem from="1606198805744" duration="270000" />
+      <workItem from="1606270381616" duration="153000" />
+      <workItem from="1606286703402" duration="1189000" />
+      <workItem from="1606459817682" duration="12000" />
+      <workItem from="1606728933010" duration="2742000" />
+      <workItem from="1606785470063" duration="231000" />
+      <workItem from="1606894983610" duration="628000" />
+      <workItem from="1606897903894" duration="1222000" />
+      <workItem from="1607312314649" duration="8952000" />
+      <workItem from="1607476984556" duration="653000" />
+      <workItem from="1607593067806" duration="5995000" />
+      <workItem from="1607997700933" duration="1317000" />
+      <workItem from="1608714672520" duration="1441000" />
+      <workItem from="1608772440870" duration="44006000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1599821613138</created>
@@ -162,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603103646878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="大文件上传">
+      <created>1604053529582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604053529582</updated>
+    </task>
+    <task id="LOCAL-00005" summary="大文件上传">
+      <created>1604053627282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604053627282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +232,8 @@
     <MESSAGE value="初始化项目" />
     <MESSAGE value="书籍列表 自习室列表 添加自定义plugin loader 修改路由规则" />
     <MESSAGE value="Todo拖拽页 自习室、书籍管理分页功能 推荐书目页(瀑布流)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todo拖拽页 自习室、书籍管理分页功能 推荐书目页(瀑布流)" />
+    <MESSAGE value="大文件上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="大文件上传" />
   </component>
   <component name="WindowStateProjectService">
     <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602661215890">
@@ -194,17 +243,11 @@
     <state x="2544" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602317228048">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1599619278869" />
     <state x="2544" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317228048" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1603103667542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1603103667542" />
-    <state x="2660" y="261" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821391262" />
-    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog" timestamp="1599821634871">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2742" y="417" width="275" height="280" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821634871" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1602317697088">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -221,39 +264,34 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602317697088" />
-    <state x="2381" y="164" key="SettingsEditor" timestamp="1599820730266">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2381" y="164" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820730266" />
-    <state x="2710" y="389" key="VCS.EditChangelistDialog" timestamp="1599820170244">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2710" y="389" key="VCS.EditChangelistDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820170244" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603103651905">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604053631005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1603103651905" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599821199782" />
-    <state x="2683" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599820052382">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2683" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820052382" />
-    <state x="869" y="385" width="596" height="536" key="find.popup" timestamp="1603958260397">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604053631005" />
+    <state x="869" y="385" width="596" height="536" key="find.popup" timestamp="1606290353215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="869" y="385" width="596" height="536" key="find.popup/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1603958260397" />
+    <state x="869" y="385" width="596" height="536" key="find.popup/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606290353215" />
     <state x="2582" y="252" width="596" height="536" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602309991141" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1599731573869">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604374116084">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599731573869" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602312052983">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="616" y="240" key="run.anything.popup/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604374116084" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609136875654">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.2.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1609136875654" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602312052983" />
-    <state x="2710" y="311" key="svn.repositoryBrowser" timestamp="1599820404115">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2710" y="311" key="svn.repositoryBrowser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599820404115" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/models/user.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

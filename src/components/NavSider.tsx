@@ -29,6 +29,15 @@ const NavSider=()=>{
       <Menu.Item  key="/users/bookTypeAnalyze">
         <NavLink to="/users/bookTypeAnalyze">数据分析</NavLink>
       </Menu.Item>
+      <Menu.Item key='users/echarts'>
+        <NavLink to="/users/echarts">echarts</NavLink>
+      </Menu.Item>
+      <Menu.Item key='users/chat'>
+        <NavLink to="/users/chat">聊天室</NavLink>
+      </Menu.Item>
+      <Menu.Item key='users/game'>
+        <NavLink to="/users/game">坦克大战</NavLink>
+      </Menu.Item>
     </Menu>
   );
 }

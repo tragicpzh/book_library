@@ -64,6 +64,9 @@ const Login=(props:FormComponentProps)=>{
       }
     })
   }
+  const toNewPage=()=>{
+    const newPage=window.open('https://www.baidu.com',"test");
+  }
   const {getFieldDecorator}=props.form;
   return(
     <div className={style.normal} id="oi">{
@@ -170,6 +173,7 @@ const Login=(props:FormComponentProps)=>{
           </Form>
         </Card>
     }
+      <a type='primary' onClick={toNewPage}>新页面</a>
     </div>
   )
 }

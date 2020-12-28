@@ -8,6 +8,7 @@ import Cascader from '@/components/Cascader/index'
 import Slider from './components/Slider/index'
 import Rate from './components/Rate/index'
 import BigUpload from './components/BigUpload'
+import Progress from './components/Progress'
 
 const IndexForm=(props:FormComponentProps)=>{
   const dispatch=useDispatch();
@@ -46,8 +47,14 @@ const IndexForm=(props:FormComponentProps)=>{
       file.percent&&console.log(file.percent)
     }
   }
+  const toNewPage=()=>{
+    let newPage=window.open('');
+    newPage.location.href='bookManage';
+  }
   return(
     <div>
+      <Progress/>
+      <Button type='primary' onClick={toNewPage}>新页面</Button>
       <BigUpload></BigUpload>
       <Rate></Rate>
       <Slider></Slider>

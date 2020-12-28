@@ -11,7 +11,7 @@ const BookRecommend = () => {
   const [imgs, setImgs] = useState([]);
 
   const scrollHandle = e => {
-    const offsetHeight = 20;
+    const offsetHeight = 40;
     const Top = e.target.scrollTop;
     const Height = e.target.clientHeight;
     const imgs = getDvaApp()._store.getState().recommends.imgs;
@@ -24,11 +24,12 @@ const BookRecommend = () => {
       );
       if (height < Top + Height + 20) {
         const min=Top + Height + 20-height;
+        console.log(min,Top,Height,height)
         dispatch({
           type: 'recommends/addImg',
           payload: {
             index,
-            height:Math.floor(Math.random()*100+min)
+            height:Math.floor(Math.random()*100+min+50)
           },
         });
       }
