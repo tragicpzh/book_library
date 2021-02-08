@@ -173,7 +173,6 @@ const Login=(props:FormComponentProps)=>{
           </Form>
         </Card>
     }
-      <a type='primary' onClick={toNewPage}>新页面</a>
     </div>
   )
 }

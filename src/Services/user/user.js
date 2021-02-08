@@ -29,3 +29,19 @@ export function getUser(params){
       })
   )
 }
+export function getBooks(params){
+  return(
+    request
+      .post(`http://172.16.9.129:3000/user/getBooks`,{
+        data:{
+          ...params
+        }
+      })
+      .then(function(response){
+        return response;
+      })
+      .then(function(err){
+        return err;
+      })
+  )
+}

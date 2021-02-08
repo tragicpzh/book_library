@@ -1,12 +1,15 @@
 {
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "electron-dev": "electron . dev"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -30,6 +33,7 @@
     "cross-env": "^7.0.2",
     "echarts": "^4.9.0",
     "echarts-for-react": "^2.0.16",
+    "electron": "^11.1.1",
     "koa": "^2.13.0",
     "koa-compress": "^5.0.1",
     "koa-mount": "^4.0.0",
